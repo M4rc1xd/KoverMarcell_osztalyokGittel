@@ -7,6 +7,29 @@ namespace Gyakorlas
         static void Main(string[] args)
         {
             System.Console.WriteLine();
+            KemKuldetes k1 = new KemKuldetes("007", "Anglia", 100, 10);
+            KemKuldetes k2 = new KemKuldetes("001", "Magyarország");
+            Console.WriteLine(k1);
+            Console.WriteLine(k2);
+            System.Console.WriteLine();
+            Console.WriteLine(k1.kuldetesInditasa());
+            System.Console.WriteLine();
+            k2.veszelySzintNovelese(20);
+            Console.WriteLine(k2);
+            System.Console.WriteLine();
+            k1.sikerEsejNovelese(50);
+            Console.WriteLine(k1);
+            
+
+
+
+            // Urhajo();
+            // Karakter();
+            // Film();
+            // Konyv();
+        }
+        public static void Urhajo(){
+            System.Console.WriteLine();
             Urhajo u1 = new Urhajo("Apollo 11", 1000, 10, 50);
             Urhajo u2 = new Urhajo("Apollo 9", 5);
             Console.WriteLine(u1);
@@ -20,10 +43,6 @@ namespace Gyakorlas
             System.Console.WriteLine();
             u2.landolas();
             Console.WriteLine(u1);
-
-            // Karakter();
-            // Film();
-            // Konyv();
         }
 
         public static void Karakter(){
