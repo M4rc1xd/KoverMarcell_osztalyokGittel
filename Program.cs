@@ -7,6 +7,27 @@ namespace Gyakorlas
         static void Main(string[] args)
         {
             System.Console.WriteLine();
+            Urhajo u1 = new Urhajo("Apollo 11", 1000, 10, 50);
+            Urhajo u2 = new Urhajo("Apollo 9", 5);
+            Console.WriteLine(u1);
+            Console.WriteLine(u2);
+            System.Console.WriteLine();
+            u2.indulas();
+            Console.WriteLine(u2);
+            System.Console.WriteLine();
+            u1.tankolas(20);
+            Console.WriteLine(u2);
+            System.Console.WriteLine();
+            u2.landolas();
+            Console.WriteLine(u1);
+
+            // Karakter();
+            // Film();
+            // Konyv();
+        }
+
+        public static void Karakter(){
+            System.Console.WriteLine();
             Karakter k1 = new Karakter("Gandalf", 100, 1000, 100);
             Karakter k2 = new Karakter("Frodo", 5);
             Console.WriteLine(k1);
@@ -19,10 +40,6 @@ namespace Gyakorlas
             System.Console.WriteLine();
             k1.SzintLepes();
             Console.WriteLine(k1);
-
-
-            // Film();
-            // Konyv();
         }
 
         public static void Film(){
