@@ -7,6 +7,26 @@ namespace Gyakorlas
         static void Main(string[] args)
         {
             System.Console.WriteLine();
+            Karakter k1 = new Karakter("Gandalf", 100, 1000, 100);
+            Karakter k2 = new Karakter("Frodo", 5);
+            Console.WriteLine(k1);
+            Console.WriteLine(k2);
+            System.Console.WriteLine();
+            Console.WriteLine(k1.Tamadas());
+            Console.WriteLine();
+            k2.Gyogyulas(50);
+            Console.WriteLine(k2);
+            System.Console.WriteLine();
+            k1.SzintLepes();
+            Console.WriteLine(k1);
+
+
+            // Film();
+            // Konyv();
+        }
+
+        public static void Film(){
+            System.Console.WriteLine();
             Film f1 = new Film("Titanic", "James Cameron", 195, "Romantikus", true);
             Film f2 = new Film("Batman", "Christopher Nolan");
             System.Console.WriteLine(f1);
@@ -19,10 +39,6 @@ namespace Gyakorlas
             System.Console.WriteLine();
             f1.HosszNovelese(10);
             System.Console.WriteLine(f1);
-
-
-
-            // Konyv();
         }
 
         public static void Konyv(){
