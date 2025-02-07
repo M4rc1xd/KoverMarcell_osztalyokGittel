@@ -2,10 +2,10 @@ namespace Gyakorlas
 {
     public class Karakter
     {
-        public string nev;
-        public int szint;
-        public int eletero;
-        public int ero;
+        private string nev;
+        private int szint;
+        private int eletero;
+        private int ero;
 
         public Karakter(string nev, int szint, int eletero, int ero)
         {
